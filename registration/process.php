@@ -25,7 +25,7 @@ if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 $upload_dir = 'uploads/';
 $filename = uniqid() . '_' . date('m-d-Y_H-i-s') . '_' . $profile_pic['name'];
 
-if ( !move_uploaded_file($profile_pic['tmp_name '], $upload_dir . $filename)) {
+if ( !move_uploaded_file( $profile_pic['tmp_name'], $upload_dir . $filename)) {
     die('Error uploading file');
 }
 
