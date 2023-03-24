@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form</title>
+</head>
+<body>
+    <h2>User Registration Form</h2>
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="" required><br><br>
+        <label for ="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="" required><br><br>
+        <label for="profile_pic">Choose a profile picture:</label>
+        <input type="file" id="profile_pic" name="profile_pic"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      
+</body>
+</html>
+
